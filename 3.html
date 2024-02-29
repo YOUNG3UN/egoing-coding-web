@@ -5,38 +5,8 @@
     <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function linksSetColor(color){
-            var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){
-                    alist[i].style.color = color;
-                    i = i + 1;
-                }
-        }
-        function bodySetColor(color){
-            document.querySelector('body').style.color = color;
-        }
-        function bodySetBackgroundColor(color){
-            document.querySelector('body').style.backgroundColor = color;
-        }
-        function nigthDayhandler(self){
-            var target = document.querySelector('body');
-            if(self.value === 'night'){
-                bodySetBackgroundColor('black');
-                bodySetColor('white');
-                self.value = 'day';
-
-                linksSetColor('powderblue');
-            } else {
-                bodySetBackgroundColor('white');
-                bodySetColor('black');
-                self.value = 'night';
-
-                linksSetColor('blue');
-            }
-        }
-    </script>
+    <script src="color.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
